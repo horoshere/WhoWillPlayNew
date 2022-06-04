@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import AppFilter from '../app-filter/app-filter';
+import TeamsList from '../teams-list/teams-list';
 
 import './app.scss';
 
@@ -66,6 +67,7 @@ class App extends Component {
         return(
             <div className="app">
                 <AppFilter/>
+                <TeamsList/>
             </div>
         )
     }

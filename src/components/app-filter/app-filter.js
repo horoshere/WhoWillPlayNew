@@ -1,5 +1,5 @@
 
-
+import './app-filter.scss'
 
 const AppFilter = (props) => {
     const bttnsData = [
@@ -12,6 +12,7 @@ const AppFilter = (props) => {
     const buttons = bttnsData.map(({name, label}) => {
         return (
             <button type="button"
+                    className="btn-filter"
                     key={name}>
                     {label}
             </button>

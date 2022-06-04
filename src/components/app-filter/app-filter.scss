@@ -1,3 +1,32 @@
-.app-filter {
-    
+.btn-wrap {
+    padding-left: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #001d27;
+}
+
+.btn-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    height: 28px;
+    margin-right: 8px;
+    border-radius: 8px;
+    border: 0;
+    padding: 0 12px;
+    color: #c8cdcd;
+    background-color: #0f2d37;
+    font-family: 'Roboto', sans-serif;
+}
+
+.selected {
+    background-color: #ff0046;
+    color: #eee;
+    cursor: default;
 }
