@@ -1,18 +1,14 @@
+import TeamCard from '../team-card/team-card';
+
 
 import './teams-list.scss'
 
 const TeamsList = (props) => {
-    // const cardsData = ;
-
-    // const cards = cardsData.map(({name, label}) => {
-    //     return (
-    //         <div className="card"></div>
-    //     )
-    // })
-
     return (
         <div className="teams-list">
-            ssdsdsdsd
+            <TeamCard/>
+            <TeamCard/>
+            <TeamCard/>
         </div>
     )
 }

@@ -23,10 +23,17 @@
     color: #c8cdcd;
     background-color: #0f2d37;
     font-family: 'Roboto', sans-serif;
+    transition: all 0.2s;
+    &:hover {
+       background-color: #999; 
+    }
 }
 
 .selected {
     background-color: #ff0046;
     color: #eee;
     cursor: default;
+    &:hover {
+        background-color: #ff0046; 
+     }
 }
