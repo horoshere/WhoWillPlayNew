@@ -10,10 +10,13 @@ const AppFilter = (props) => {
     ];
 
     const buttons = bttnsData.map(({name, label}) => {
+        const selected = props.filter === name;
+        const clazz = selected ? 'btn-filter selected' : 'btn-filter';
         return (
             <button type="button"
-                    className="btn-filter"
-                    key={name}>
+                    className={clazz}
+                    key={name}
+                    onClick={() => props.onFilterSelect(name)}>
                     {label}
             </button>
         )
