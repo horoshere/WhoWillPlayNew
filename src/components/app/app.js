@@ -82,11 +82,20 @@ class App extends Component {
         this.setState({filter});
     }
 
-
+    mixCards = (items) => {
+        let j, temp;
+        for (let i = items.length - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * (i + 1));
+            temp = items[j];
+            items[j] = items[i];
+            items[i] = temp;
+        }
+        return items;
+    }
 
     render() {
         const {data, filter} = this.state;
-        const visibleData = this.filterCards(data, filter);
+        const visibleData = this.filterCards(this.mixCards(data), filter);
         return(
             <div className="app">
                 <AppFilter filter={filter} onFilterSelect={this.onFilterSelect}/>
